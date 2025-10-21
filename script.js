@@ -54,7 +54,7 @@ async function transcribe(blob) {
 
   const params = await LanguageModel.params();
   const session = await LanguageModel.create({
-    expectedInputs: [{ type: "audio", languages: ["en", "bn", "hi"] }],
+    expectedInputs: [{ type: "audio", languages: ["en", "hi"] }],
     temperature: 0.1,
     topK: params.defaultTopK,
   });
